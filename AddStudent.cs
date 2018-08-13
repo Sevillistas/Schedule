@@ -58,7 +58,7 @@ namespace AutoSchedule
                 }
             }
             studs.UpdateStudent(); //скорее всего можно убрать
-            generator.CreateTableForStudent();
+            generator.FillCalendarOfBusyness();
             SerializeXml();
         }
 

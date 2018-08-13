@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace AutoSchedule
 {
@@ -14,6 +15,8 @@ namespace AutoSchedule
         public string ClassOfPiano;
         public string LevelOfTraining;
         public List<PotentialDay> PotentialDays = new List<PotentialDay>();
+        [XmlIgnore] public bool[,] TablePotentialDays = new bool[5,12]; //5 учебных дней, 12 занятий
+        [XmlIgnore] public List<KeyValuePair<int, int>> Indexes = new List<KeyValuePair<int, int>>();
         public int NumberOfLesson;
         public Student(int id, string fio, string classofpiano, string leveloftraining)
         {
