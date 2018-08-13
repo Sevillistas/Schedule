@@ -34,7 +34,7 @@ namespace AutoSchedule
         }
         public void InitializeComboBoxCollection()
         {
-            listComboBox = students.list;
+            listComboBox = students.ListOfStudents;
             foreach (var st in listComboBox)
             {
                 comboBoxStudent.Items.Add(st.FIO);
@@ -44,7 +44,7 @@ namespace AutoSchedule
         {
             using (FileStream fs = new FileStream(path, FileMode.Open))
             {
-                students.list = (List<Student>)serializer.Deserialize(fs);
+                students.ListOfStudents = (List<Student>)serializer.Deserialize(fs);
             }
         }
 
@@ -60,13 +60,13 @@ namespace AutoSchedule
         {
             using (FileStream fs = new FileStream(path, FileMode.Create))
             {
-                serializer.Serialize(fs, students.list);
+                serializer.Serialize(fs, students.ListOfStudents);
             }
         }
         private void UpdateListFIO()
         {
             DeserializeXml();
-            foreach(var student in students.list)
+            foreach(var student in students.ListOfStudents)
             {
                 if (!listComboBox.Contains(student))
                 {
@@ -113,7 +113,7 @@ namespace AutoSchedule
 
         private void buttonAcceptBusy_Click_1(object sender, EventArgs e)
         {
-            var selectedStudent = students.list.Find(x => x.FIO.Contains(Convert.ToString(comboBoxStudent.SelectedItem)));
+            var selectedStudent = students.ListOfStudents.Find(x => x.FIO.Contains(Convert.ToString(comboBoxStudent.SelectedItem)));
 
             var potentialDay = comboBoxDayOfWeek.SelectedItem;
             var potentialTimeOfStart = inputTimeOfStart.Text;
@@ -217,7 +217,7 @@ namespace AutoSchedule
 
         private void comboBoxStudent_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var selectedStudent = students.list.Find(x => x.FIO.Contains(Convert.ToString(comboBoxStudent.SelectedItem)));
+            var selectedStudent = students.ListOfStudents.Find(x => x.FIO.Contains(Convert.ToString(comboBoxStudent.SelectedItem)));
             dataGridView1.Rows.Clear();
             foreach(var day in selectedStudent.PotentialDays)
             {

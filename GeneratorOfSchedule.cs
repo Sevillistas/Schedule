@@ -37,6 +37,8 @@ namespace AutoSchedule
 
         public List<int> TimesOfLessons = new List<int>() { 500, 540, 580, 620, 840, 880, 920, 960, 1000, 1040, 1080, 1120 };
 
+        public KeyValuePair<string, string>[,] DlyaMamy = new KeyValuePair<string, string>[5, 12];
+
         public GeneratorOfSchedule(Students st)
         {
             CalendarMinutes = new int[Calendar.GetLength(0), Calendar.GetLength(1)];
@@ -123,7 +125,7 @@ namespace AutoSchedule
 
         public void CreateSeriesOfStudents()
         {
-            foreach (Student s in students.list)
+            foreach (Student s in students.ListOfStudents)
             {
                 for (int i = 0; i < s.NumberOfLesson; i++)
                 {
@@ -138,7 +140,7 @@ namespace AutoSchedule
             int nOL = 0; //numberOfLessons
             int eTOL = 0; //earliestTimeOfLesson
 
-            foreach (Student s in students.list)
+            foreach (Student s in students.ListOfStudents)
             {
                 bool[,] Table = new bool[NumberOfWorkdays, MaxNumberOfLessons];
                 foreach (PotentialDay pd in s.PotentialDays)
@@ -159,7 +161,7 @@ namespace AutoSchedule
 
         public void CreateIndexesForStudents()
         {
-            foreach(Student s in students.list)
+            foreach(Student s in students.ListOfStudents)
             {
                 List<KeyValuePair<int, int>> indexes = new List<KeyValuePair<int, int>>();
                 for (int i = 0; i < s.TablePotentialDays.GetLength(0); i++)
@@ -193,20 +195,22 @@ namespace AutoSchedule
             for (int i = 0; i < shuffledSeries.Count; i++)
             {
                 bool success = false;
-                Student s = students.list.Find(st => st.ID == shuffledSeries[i]);
+                Student s = students.ListOfStudents.Find(st => st.ID == shuffledSeries[i]);
                 if(s.Indexes.Count==0)
                 {
                     continue;
                 }
                 List<KeyValuePair<int, int>> buf = new List<KeyValuePair<int, int>>();
                 buf.AddRange(s.Indexes);
-                while (success != true || buf.Count==0)
+                while (success != true && buf.Count!=0)
                 {
                     int rndindex = rnd.Next(0, buf.Count);
                     KeyValuePair<int, int> dayAndTime = buf[rndindex];
                     if (!CalendarOfBusyness[dayAndTime.Key, dayAndTime.Value] & s.TablePotentialDays[dayAndTime.Key, dayAndTime.Value])
                     {
                         CalendarOfBusyness[dayAndTime.Key, dayAndTime.Value] = true;
+                        KeyValuePair<string, string> dm = new KeyValuePair<string, string>(Calendar[dayAndTime.Key, dayAndTime.Value], s.FIO);
+                        DlyaMamy[dayAndTime.Key, dayAndTime.Value] = dm;
                         success = true;
                     }
                     else

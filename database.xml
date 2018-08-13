@@ -2,34 +2,6 @@
 <ArrayOfStudent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Student>
     <ID>1</ID>
-    <FIO>ффв</FIO>
-    <ClassOfPiano>Общий</ClassOfPiano>
-    <LevelOfTraining>Пред.профессиональный</LevelOfTraining>
-    <PotentialDays>
-      <PotentialDay>
-        <DayOfWeek>Monday</DayOfWeek>
-        <TimeOfStart>10:00</TimeOfStart>
-        <TimeOfEnding>14:00</TimeOfEnding>
-      </PotentialDay>
-    </PotentialDays>
-    <NumberOfLesson>1</NumberOfLesson>
-  </Student>
-  <Student>
-    <ID>2</ID>
-    <FIO>пеьтя</FIO>
-    <ClassOfPiano>Общий</ClassOfPiano>
-    <LevelOfTraining>Общеразвивающий</LevelOfTraining>
-    <PotentialDays>
-      <PotentialDay>
-        <DayOfWeek>Friday</DayOfWeek>
-        <TimeOfStart>13:20</TimeOfStart>
-        <TimeOfEnding>14:50</TimeOfEnding>
-      </PotentialDay>
-    </PotentialDays>
-    <NumberOfLesson>1</NumberOfLesson>
-  </Student>
-  <Student>
-    <ID>3</ID>
     <FIO>Алексей</FIO>
     <ClassOfPiano>Специальный</ClassOfPiano>
     <LevelOfTraining>Пред.профессиональный</LevelOfTraining>
@@ -48,35 +20,209 @@
     <NumberOfLesson>2</NumberOfLesson>
   </Student>
   <Student>
-    <ID>4</ID>
-    <FIO>Четвёртый</FIO>
-    <ClassOfPiano>Общий</ClassOfPiano>
+    <ID>2</ID>
+    <FIO>Дьячков Артём</FIO>
+    <ClassOfPiano>Специальный</ClassOfPiano>
+    <LevelOfTraining>Пред.профессиональный</LevelOfTraining>
+    <PotentialDays>
+      <PotentialDay>
+        <DayOfWeek>Monday</DayOfWeek>
+        <TimeOfStart>13:00</TimeOfStart>
+        <TimeOfEnding>18:00</TimeOfEnding>
+      </PotentialDay>
+      <PotentialDay>
+        <DayOfWeek>Tuesday</DayOfWeek>
+        <TimeOfStart>13:00</TimeOfStart>
+        <TimeOfEnding>18:00</TimeOfEnding>
+      </PotentialDay>
+      <PotentialDay>
+        <DayOfWeek>Thursday</DayOfWeek>
+        <TimeOfStart>13:00</TimeOfStart>
+        <TimeOfEnding>18:00</TimeOfEnding>
+      </PotentialDay>
+    </PotentialDays>
+    <NumberOfLesson>2</NumberOfLesson>
+  </Student>
+  <Student>
+    <ID>3</ID>
+    <FIO>Кокорина Катя</FIO>
+    <ClassOfPiano>Специальный</ClassOfPiano>
     <LevelOfTraining>Общеразвивающий</LevelOfTraining>
-    <PotentialDays />
-    <NumberOfLesson>1</NumberOfLesson>
+    <PotentialDays>
+      <PotentialDay>
+        <DayOfWeek>Friday</DayOfWeek>
+        <TimeOfStart>13:00</TimeOfStart>
+        <TimeOfEnding>18:00</TimeOfEnding>
+      </PotentialDay>
+      <PotentialDay>
+        <DayOfWeek>Wednesday</DayOfWeek>
+        <TimeOfStart>13:00</TimeOfStart>
+        <TimeOfEnding>18:00</TimeOfEnding>
+      </PotentialDay>
+      <PotentialDay>
+        <DayOfWeek>Monday</DayOfWeek>
+        <TimeOfStart>13:00</TimeOfStart>
+        <TimeOfEnding>18:00</TimeOfEnding>
+      </PotentialDay>
+    </PotentialDays>
+    <NumberOfLesson>2</NumberOfLesson>
+  </Student>
+  <Student>
+    <ID>4</ID>
+    <FIO>Фомина Лена</FIO>
+    <ClassOfPiano>Специальный</ClassOfPiano>
+    <LevelOfTraining>Общеразвивающий</LevelOfTraining>
+    <PotentialDays>
+      <PotentialDay>
+        <DayOfWeek>Tuesday</DayOfWeek>
+        <TimeOfStart>13:00</TimeOfStart>
+        <TimeOfEnding>15:00</TimeOfEnding>
+      </PotentialDay>
+      <PotentialDay>
+        <DayOfWeek>Thursday</DayOfWeek>
+        <TimeOfStart>13:00</TimeOfStart>
+        <TimeOfEnding>18:00</TimeOfEnding>
+      </PotentialDay>
+      <PotentialDay>
+        <DayOfWeek>Friday</DayOfWeek>
+        <TimeOfStart>13:00</TimeOfStart>
+        <TimeOfEnding>17:00</TimeOfEnding>
+      </PotentialDay>
+    </PotentialDays>
+    <NumberOfLesson>2</NumberOfLesson>
   </Student>
   <Student>
     <ID>5</ID>
-    <FIO>Пятый</FIO>
-    <ClassOfPiano>Общий</ClassOfPiano>
+    <FIO>Антонова Лиза</FIO>
+    <ClassOfPiano>Специальный</ClassOfPiano>
     <LevelOfTraining>Пред.профессиональный</LevelOfTraining>
-    <PotentialDays />
-    <NumberOfLesson>1</NumberOfLesson>
+    <PotentialDays>
+      <PotentialDay>
+        <DayOfWeek>Friday</DayOfWeek>
+        <TimeOfStart>13:00</TimeOfStart>
+        <TimeOfEnding>17:00</TimeOfEnding>
+      </PotentialDay>
+      <PotentialDay>
+        <DayOfWeek>Monday</DayOfWeek>
+        <TimeOfStart>13:00</TimeOfStart>
+        <TimeOfEnding>17:00</TimeOfEnding>
+      </PotentialDay>
+      <PotentialDay>
+        <DayOfWeek>Thursday</DayOfWeek>
+        <TimeOfStart>13:00</TimeOfStart>
+        <TimeOfEnding>18:00</TimeOfEnding>
+      </PotentialDay>
+    </PotentialDays>
+    <NumberOfLesson>2</NumberOfLesson>
   </Student>
   <Student>
     <ID>6</ID>
-    <FIO>Женя</FIO>
+    <FIO>Никитина Маша</FIO>
     <ClassOfPiano>Специальный</ClassOfPiano>
-    <LevelOfTraining>Общеразвивающий</LevelOfTraining>
-    <PotentialDays />
+    <LevelOfTraining>Пред.профессиональный</LevelOfTraining>
+    <PotentialDays>
+      <PotentialDay>
+        <DayOfWeek>Thursday</DayOfWeek>
+        <TimeOfStart>15:00</TimeOfStart>
+        <TimeOfEnding>19:00</TimeOfEnding>
+      </PotentialDay>
+      <PotentialDay>
+        <DayOfWeek>Tuesday</DayOfWeek>
+        <TimeOfStart>15:00</TimeOfStart>
+        <TimeOfEnding>19:00</TimeOfEnding>
+      </PotentialDay>
+    </PotentialDays>
     <NumberOfLesson>2</NumberOfLesson>
   </Student>
   <Student>
     <ID>7</ID>
-    <FIO>Федя</FIO>
-    <ClassOfPiano>Общий</ClassOfPiano>
+    <FIO>Коденцов Семён</FIO>
+    <ClassOfPiano>Специальный</ClassOfPiano>
+    <LevelOfTraining>Пред.профессиональный</LevelOfTraining>
+    <PotentialDays>
+      <PotentialDay>
+        <DayOfWeek>Friday</DayOfWeek>
+        <TimeOfStart>14:00</TimeOfStart>
+        <TimeOfEnding>17:00</TimeOfEnding>
+      </PotentialDay>
+      <PotentialDay>
+        <DayOfWeek>Monday</DayOfWeek>
+        <TimeOfStart>13:00</TimeOfStart>
+        <TimeOfEnding>17:00</TimeOfEnding>
+      </PotentialDay>
+      <PotentialDay>
+        <DayOfWeek>Monday</DayOfWeek>
+        <TimeOfStart>13:00</TimeOfStart>
+        <TimeOfEnding>17:00</TimeOfEnding>
+      </PotentialDay>
+      <PotentialDay>
+        <DayOfWeek>Tuesday</DayOfWeek>
+        <TimeOfStart>13:00</TimeOfStart>
+        <TimeOfEnding>17:00</TimeOfEnding>
+      </PotentialDay>
+    </PotentialDays>
+    <NumberOfLesson>2</NumberOfLesson>
+  </Student>
+  <Student>
+    <ID>8</ID>
+    <FIO>Булатов Матвей</FIO>
+    <ClassOfPiano>Специальный</ClassOfPiano>
     <LevelOfTraining>Общеразвивающий</LevelOfTraining>
-    <PotentialDays />
-    <NumberOfLesson>1</NumberOfLesson>
+    <PotentialDays>
+      <PotentialDay>
+        <DayOfWeek>Tuesday</DayOfWeek>
+        <TimeOfStart>13:00</TimeOfStart>
+        <TimeOfEnding>17:00</TimeOfEnding>
+      </PotentialDay>
+      <PotentialDay>
+        <DayOfWeek>Wednesday</DayOfWeek>
+        <TimeOfStart>13:00</TimeOfStart>
+        <TimeOfEnding>17:00</TimeOfEnding>
+      </PotentialDay>
+    </PotentialDays>
+    <NumberOfLesson>2</NumberOfLesson>
+  </Student>
+  <Student>
+    <ID>9</ID>
+    <FIO>Семянникова Аня</FIO>
+    <ClassOfPiano>Специальный</ClassOfPiano>
+    <LevelOfTraining>Пред.профессиональный</LevelOfTraining>
+    <PotentialDays>
+      <PotentialDay>
+        <DayOfWeek>Wednesday</DayOfWeek>
+        <TimeOfStart>13:00</TimeOfStart>
+        <TimeOfEnding>18:00</TimeOfEnding>
+      </PotentialDay>
+      <PotentialDay>
+        <DayOfWeek>Wednesday</DayOfWeek>
+        <TimeOfStart>12:00</TimeOfStart>
+        <TimeOfEnding>16:00</TimeOfEnding>
+      </PotentialDay>
+      <PotentialDay>
+        <DayOfWeek>Thursday</DayOfWeek>
+        <TimeOfStart>12:00</TimeOfStart>
+        <TimeOfEnding>16:00</TimeOfEnding>
+      </PotentialDay>
+    </PotentialDays>
+    <NumberOfLesson>2</NumberOfLesson>
+  </Student>
+  <Student>
+    <ID>10</ID>
+    <FIO>Рехвашвили Даша</FIO>
+    <ClassOfPiano>Специальный</ClassOfPiano>
+    <LevelOfTraining>Пред.профессиональный</LevelOfTraining>
+    <PotentialDays>
+      <PotentialDay>
+        <DayOfWeek>Monday</DayOfWeek>
+        <TimeOfStart>13:00</TimeOfStart>
+        <TimeOfEnding>18:00</TimeOfEnding>
+      </PotentialDay>
+      <PotentialDay>
+        <DayOfWeek>Wednesday</DayOfWeek>
+        <TimeOfStart>14:30</TimeOfStart>
+        <TimeOfEnding>17:30</TimeOfEnding>
+      </PotentialDay>
+    </PotentialDays>
+    <NumberOfLesson>2</NumberOfLesson>
   </Student>
 </ArrayOfStudent>

@@ -16,7 +16,7 @@ namespace AutoSchedule
     public partial class AddStudent : UserControl
     {
 
-        Students studs = new Students();
+        Students studs;
         GeneratorOfSchedule generator;
         string path = "C:\\Users\\Aleks\\Documents\\Visual Studio 2017\\Projects\\AutoSchedule\\AutoSchedule\\database.xml";
         XmlSerializer serializer = new XmlSerializer(typeof(List<Student>));
@@ -29,7 +29,7 @@ namespace AutoSchedule
         {
             using (FileStream fs = new FileStream(path, FileMode.Create))
             {
-                serializer.Serialize(fs, studs.list);
+                serializer.Serialize(fs, studs.ListOfStudents);
             }
         }
 
@@ -37,7 +37,7 @@ namespace AutoSchedule
         {
             Student s = new Student(textBoxFIO.Text, comboBoxClassPiano.Text, comboBoxLevelTrain.Text);
             
-            s.ID = studs.list.Count + 1; //Присваивание ID новому студенту
+            s.ID = studs.ListOfStudents.Count + 1; //Присваивание ID новому студенту
             studs.AddStudent(s);
             SerializeXml();
         }
@@ -52,7 +52,7 @@ namespace AutoSchedule
                     xmlRead.Close();
                     using (FileStream fs = new FileStream(path, FileMode.Open))
                     {
-                        studs.list = (List<Student>)serializer.Deserialize(fs);
+                        studs = new Students((List<Student>)serializer.Deserialize(fs));
                         generator = new GeneratorOfSchedule(studs);
                     }
                 }

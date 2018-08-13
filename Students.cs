@@ -8,7 +8,12 @@ namespace AutoSchedule
 {
     class Students
     {
-        public List<Student> list = new List<Student>();
+        public List<Student> ListOfStudents = new List<Student>();
+
+        public Students(List<Student> students)
+        {
+            ListOfStudents = students;
+        }
 
         public Students()
         {
@@ -17,12 +22,12 @@ namespace AutoSchedule
 
         public void AddStudent(Student student)
         {
-            list.Add(student);
+            ListOfStudents.Add(student);
         }
 
         public void UpdateStudent()
         {
-            foreach(Student s in list)
+            foreach(Student s in ListOfStudents)
             {
                 s.CountNumberOfLesson();
             }
