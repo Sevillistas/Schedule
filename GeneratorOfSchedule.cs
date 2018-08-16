@@ -16,16 +16,26 @@ namespace AutoSchedule
         */
 
         public const int NumberOfWorkdays = 5;
-        public const int MaxNumberOfLessons = 12;
+        public const int MaxNumberOfLessons = 10;
+        public const int LastMorningLesson = 610;
+        public const int EndFirstANLesson = 860;
+        public const int FirstANLesson = 810;
+        public const int DurationOfLesson = 50;
 
-        public string[,] Calendar = { { "8:20", "9:00", "9:40", "10:20", "14:00", "14:40", "15:20", "16:00", "16:40", "17:20", "18:00", "18:40" },
+        /*public string[,] Calendar = { { "8:20", "9:00", "9:40", "10:20", "14:00", "14:40", "15:20", "16:00", "16:40", "17:20", "18:00", "18:40" },
                                { "8:20", "9:00", "9:40", "10:20", "14:00", "14:40", "15:20", "16:00", "16:40", "17:20", "18:00", "18:40" },
                                { "8:20", "9:00", "9:40", "10:20", "14:00", "14:40", "15:20", "16:00", "16:40", "17:20", "18:00", "18:40" },
                                { "8:20", "9:00", "9:40", "10:20", "14:00", "14:40", "15:20", "16:00", "16:40", "17:20", "18:00", "18:40" },
                                { "8:20", "9:00", "9:40", "10:20", "14:00", "14:40", "15:20", "16:00", "16:40", "17:20", "18:00", "18:40" },
+        };*/
+
+        public string[,] Calendar = { { "8:30", "9:20", "10:10", "13:30", "14:20", "15:10", "16:00", "16:50", "17:40", "18:30"},
+                                      { "8:30", "9:20", "10:10", "13:30", "14:20", "15:10", "16:00", "16:50", "17:40", "18:30"},
+                                      { "8:30", "9:20", "10:10", "13:30", "14:20", "15:10", "16:00", "16:50", "17:40", "18:30"},
+                                      { "8:30", "9:20", "10:10", "13:30", "14:20", "15:10", "16:00", "16:50", "17:40", "18:30"},
+                                      { "8:30", "9:20", "10:10", "13:30", "14:20", "15:10", "16:00", "16:50", "17:40", "18:30"},
         };
-
-        public bool[,] CalendarOfBusyness = new bool[5, 12];
+        public bool[,] CalendarOfBusyness = new bool[NumberOfWorkdays, MaxNumberOfLessons];
 
         public int[,] CalendarMinutes;
 
@@ -35,9 +45,13 @@ namespace AutoSchedule
 
         public List<int> shuffledSeries = new List<int>();
 
-        public List<int> TimesOfLessons = new List<int>() { 500, 540, 580, 620, 840, 880, 920, 960, 1000, 1040, 1080, 1120 };
+        public List<int> TimesOfLessons = new List<int>() { 510, 560, 610, 810, 860, 910, 960, 1010, 1060, 1110 };
 
-        public KeyValuePair<string, string>[,] DlyaMamy = new KeyValuePair<string, string>[5, 12];
+        public KeyValuePair<string, string>[,] StudentTimeTable = new KeyValuePair<string, string>[NumberOfWorkdays, MaxNumberOfLessons];
+
+        //public List<int> TimesOfLessons = new List<int>() { 500, 540, 580, 620, 840, 880, 920, 960, 1000, 1040, 1080, 1120 };
+
+        //public KeyValuePair<string, string>[,] DlyaMamy = new KeyValuePair<string, string>[5, 12];
 
         public GeneratorOfSchedule(Students st)
         {
@@ -101,25 +115,25 @@ namespace AutoSchedule
             int timeOS = ConvertStringTimeToMinutes(pd.TimeOfStart);
             int timeOE = ConvertStringTimeToMinutes(pd.TimeOfEnding);
             int difference = 0;
-            if (timeOS > 620 && timeOE < 880)
+            if (timeOS > LastMorningLesson && timeOE < EndFirstANLesson)
             {
                 return 0;
             }
-            if (timeOS <= 620 && timeOE >= 840)
+            if (timeOS <= LastMorningLesson && timeOE >= FirstANLesson)
             {
                 difference = 660 - timeOS; //660=11:00 //60 min s utra
-                difference += (timeOE - 840);
+                difference += (timeOE - FirstANLesson);
             }
-            else if ((timeOS > 620 && timeOS <= 840) && timeOE >= 840)
+            else if ((timeOS > LastMorningLesson && timeOS <= FirstANLesson) && timeOE >= FirstANLesson)
             {
-                timeOS = 840;
+                timeOS = FirstANLesson;
                 difference = timeOE - timeOS;
             }
             else
             {
                 difference = timeOE - timeOS;
             }
-            int countLessons = difference / 40; //40 минут длится урок
+            int countLessons = difference / DurationOfLesson; //50 минут длится урок
             return countLessons;
         }
 
@@ -210,7 +224,7 @@ namespace AutoSchedule
                     {
                         CalendarOfBusyness[dayAndTime.Key, dayAndTime.Value] = true;
                         KeyValuePair<string, string> dm = new KeyValuePair<string, string>(Calendar[dayAndTime.Key, dayAndTime.Value], s.FIO);
-                        DlyaMamy[dayAndTime.Key, dayAndTime.Value] = dm;
+                        StudentTimeTable[dayAndTime.Key, dayAndTime.Value] = dm;
                         success = true;
                     }
                     else
@@ -220,6 +234,7 @@ namespace AutoSchedule
                 }
             }
         }
+
         public int FindEarliestTimeOfLesson(PotentialDay pd)
         {
             int timeOS = ConvertStringTimeToMinutes(pd.TimeOfStart);

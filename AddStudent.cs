@@ -53,12 +53,9 @@ namespace AutoSchedule
                     using (FileStream fs = new FileStream(path, FileMode.Open))
                     {
                         studs = new Students((List<Student>)serializer.Deserialize(fs));
-                        generator = new GeneratorOfSchedule(studs);
                     }
                 }
             }
-            studs.UpdateStudent(); //скорее всего можно убрать
-            generator.FillCalendarOfBusyness();
             SerializeXml();
         }
 

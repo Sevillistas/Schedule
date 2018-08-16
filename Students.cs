@@ -13,6 +13,7 @@ namespace AutoSchedule
         public Students(List<Student> students)
         {
             ListOfStudents = students;
+            UpdateStudent();
         }
 
         public Students()

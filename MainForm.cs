@@ -26,7 +26,11 @@ namespace AutoSchedule
         private void toolStripAddBusy_Click(object sender, EventArgs e)
         {
             addPotentialDay1.BringToFront();
+        }
 
+        private void toolStripLabel1_Click(object sender, EventArgs e)
+        {
+            showSchedule1.BringToFront();
         }
     }
 }
