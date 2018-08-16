@@ -17,6 +17,7 @@ namespace AutoSchedule
         public List<PotentialDay> PotentialDays = new List<PotentialDay>();
         [XmlIgnore] public bool[,] TablePotentialDays = new bool[5,10]; //5 учебных дней, 10 занятий
         [XmlIgnore] public List<KeyValuePair<int, int>> Indexes = new List<KeyValuePair<int, int>>();
+        [XmlIgnore] public List<KeyValuePair<int, int>> UsedIndexes = new List<KeyValuePair<int, int>>();
         public int NumberOfLesson;
         public Student(int id, string fio, string classofpiano, string leveloftraining)
         {

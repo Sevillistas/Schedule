@@ -210,7 +210,7 @@ namespace AutoSchedule
             {
                 bool success = false;
                 Student s = students.ListOfStudents.Find(st => st.ID == shuffledSeries[i]);
-                if(s.Indexes.Count==0)
+                if(s.Indexes.Count==0) //если у студента нет уроков
                 {
                     continue;
                 }
@@ -222,7 +222,13 @@ namespace AutoSchedule
                     KeyValuePair<int, int> dayAndTime = buf[rndindex];
                     if (!CalendarOfBusyness[dayAndTime.Key, dayAndTime.Value] & s.TablePotentialDays[dayAndTime.Key, dayAndTime.Value])
                     {
+                        if(s.UsedIndexes.Exists(v=>v.Key==dayAndTime.Key))
+                        {
+                            buf.RemoveAt(rndindex);
+                            continue;
+                        }
                         CalendarOfBusyness[dayAndTime.Key, dayAndTime.Value] = true;
+                        s.UsedIndexes.Add(dayAndTime);
                         KeyValuePair<string, string> dm = new KeyValuePair<string, string>(Calendar[dayAndTime.Key, dayAndTime.Value], s.FIO);
                         StudentTimeTable[dayAndTime.Key, dayAndTime.Value] = dm;
                         success = true;
@@ -271,5 +277,9 @@ namespace AutoSchedule
 
         }
 
+        public void CheckSameDay()
+        {
+
+        }
     }
 }
