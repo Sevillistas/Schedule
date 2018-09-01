@@ -35,7 +35,7 @@ namespace AutoSchedule
 
         private void buttonAddStudent_Click(object sender, EventArgs e)
         {
-            Student s = new Student(textBoxFIO.Text, comboBoxClassPiano.Text, comboBoxLevelTrain.Text);
+            Student s = new Student(textBoxFIO.Text, comboBoxClassPiano.Text, comboBoxLevelTrain.Text, int.Parse(comboBoxForm.Text));
             
             s.ID = studs.ListOfStudents.Count + 1; //Присваивание ID новому студенту
             studs.AddStudent(s);

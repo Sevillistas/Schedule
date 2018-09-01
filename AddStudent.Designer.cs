@@ -35,6 +35,8 @@
             this.comboBoxClassPiano = new System.Windows.Forms.ComboBox();
             this.comboBoxLevelTrain = new System.Windows.Forms.ComboBox();
             this.buttonAddStudent = new System.Windows.Forms.Button();
+            this.comboBoxForm = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBoxFIO
@@ -103,10 +105,37 @@
             this.buttonAddStudent.UseVisualStyleBackColor = true;
             this.buttonAddStudent.Click += new System.EventHandler(this.buttonAddStudent_Click);
             // 
+            // comboBoxForm
+            // 
+            this.comboBoxForm.FormattingEnabled = true;
+            this.comboBoxForm.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"});
+            this.comboBoxForm.Location = new System.Drawing.Point(51, 228);
+            this.comboBoxForm.Name = "comboBoxForm";
+            this.comboBoxForm.Size = new System.Drawing.Size(172, 21);
+            this.comboBoxForm.TabIndex = 14;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(48, 212);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(133, 13);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Выберите класс ученика";
+            // 
             // AddStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.comboBoxForm);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonAddStudent);
             this.Controls.Add(this.comboBoxLevelTrain);
             this.Controls.Add(this.comboBoxClassPiano);
@@ -130,5 +159,7 @@
         private System.Windows.Forms.ComboBox comboBoxClassPiano;
         private System.Windows.Forms.ComboBox comboBoxLevelTrain;
         private System.Windows.Forms.Button buttonAddStudent;
+        private System.Windows.Forms.ComboBox comboBoxForm;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -73,6 +73,12 @@
     <Compile Include="ShowSchedule.Designer.cs">
       <DependentUpon>ShowSchedule.cs</DependentUpon>
     </Compile>
+    <Compile Include="StudentInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentInfo.Designer.cs">
+      <DependentUpon>StudentInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Students.cs" />
     <Compile Include="Student.cs" />
     <EmbeddedResource Include="AddPotentialDay.resx">
@@ -95,6 +101,9 @@
     </Compile>
     <EmbeddedResource Include="ShowSchedule.resx">
       <DependentUpon>ShowSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentInfo.resx">
+      <DependentUpon>StudentInfo.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\DataSources\AddStudent.datasource" />
     <None Include="Properties\Settings.settings">

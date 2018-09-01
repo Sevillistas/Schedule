@@ -5,6 +5,7 @@
     <FIO>Алексей</FIO>
     <ClassOfPiano>Специальный</ClassOfPiano>
     <LevelOfTraining>Пред.профессиональный</LevelOfTraining>
+    <Form>0</Form>
     <PotentialDays>
       <PotentialDay>
         <DayOfWeek>Wednesday</DayOfWeek>
@@ -16,14 +17,48 @@
         <TimeOfStart>12:00</TimeOfStart>
         <TimeOfEnding>16:00</TimeOfEnding>
       </PotentialDay>
+      <PotentialDay>
+        <DayOfWeek>Thursday</DayOfWeek>
+        <TimeOfStart>12:00</TimeOfStart>
+        <TimeOfEnding>15:00</TimeOfEnding>
+      </PotentialDay>
     </PotentialDays>
-    <NumberOfLesson>2</NumberOfLesson>
+    <Indexes>
+      <KeyValuePairOfInt32Int32>
+        <Key>0</Key>
+        <Value>3</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>0</Key>
+        <Value>4</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>0</Key>
+        <Value>5</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>3</Value>
+      </KeyValuePairOfInt32Int32>
+    </Indexes>
+    <DaysOfLessons>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>3</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>0</Key>
+        <Value>5</Value>
+      </KeyValuePairOfInt32Int32>
+    </DaysOfLessons>
+    <NumberOfLessons>2</NumberOfLessons>
   </Student>
   <Student>
     <ID>2</ID>
     <FIO>Дьячков Артём</FIO>
     <ClassOfPiano>Специальный</ClassOfPiano>
     <LevelOfTraining>Пред.профессиональный</LevelOfTraining>
+    <Form>0</Form>
     <PotentialDays>
       <PotentialDay>
         <DayOfWeek>Monday</DayOfWeek>
@@ -41,13 +76,86 @@
         <TimeOfEnding>18:00</TimeOfEnding>
       </PotentialDay>
     </PotentialDays>
-    <NumberOfLesson>2</NumberOfLesson>
+    <Indexes>
+      <KeyValuePairOfInt32Int32>
+        <Key>0</Key>
+        <Value>3</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>0</Key>
+        <Value>4</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>0</Key>
+        <Value>5</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>0</Key>
+        <Value>6</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>0</Key>
+        <Value>7</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>1</Key>
+        <Value>3</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>1</Key>
+        <Value>4</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>1</Key>
+        <Value>5</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>1</Key>
+        <Value>6</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>1</Key>
+        <Value>7</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>3</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>4</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>5</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>6</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>7</Value>
+      </KeyValuePairOfInt32Int32>
+    </Indexes>
+    <DaysOfLessons>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>4</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>0</Key>
+        <Value>6</Value>
+      </KeyValuePairOfInt32Int32>
+    </DaysOfLessons>
+    <NumberOfLessons>2</NumberOfLessons>
   </Student>
   <Student>
     <ID>3</ID>
     <FIO>Кокорина Катя</FIO>
     <ClassOfPiano>Специальный</ClassOfPiano>
     <LevelOfTraining>Общеразвивающий</LevelOfTraining>
+    <Form>0</Form>
     <PotentialDays>
       <PotentialDay>
         <DayOfWeek>Friday</DayOfWeek>
@@ -65,13 +173,86 @@
         <TimeOfEnding>18:00</TimeOfEnding>
       </PotentialDay>
     </PotentialDays>
-    <NumberOfLesson>2</NumberOfLesson>
+    <Indexes>
+      <KeyValuePairOfInt32Int32>
+        <Key>0</Key>
+        <Value>3</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>0</Key>
+        <Value>4</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>0</Key>
+        <Value>5</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>0</Key>
+        <Value>6</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>0</Key>
+        <Value>7</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>2</Key>
+        <Value>3</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>2</Key>
+        <Value>4</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>2</Key>
+        <Value>5</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>2</Key>
+        <Value>6</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>2</Key>
+        <Value>7</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>4</Key>
+        <Value>3</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>4</Key>
+        <Value>4</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>4</Key>
+        <Value>5</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>4</Key>
+        <Value>6</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>4</Key>
+        <Value>7</Value>
+      </KeyValuePairOfInt32Int32>
+    </Indexes>
+    <DaysOfLessons>
+      <KeyValuePairOfInt32Int32>
+        <Key>2</Key>
+        <Value>7</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>4</Key>
+        <Value>5</Value>
+      </KeyValuePairOfInt32Int32>
+    </DaysOfLessons>
+    <NumberOfLessons>2</NumberOfLessons>
   </Student>
   <Student>
     <ID>4</ID>
     <FIO>Фомина Лена</FIO>
     <ClassOfPiano>Специальный</ClassOfPiano>
     <LevelOfTraining>Общеразвивающий</LevelOfTraining>
+    <Form>0</Form>
     <PotentialDays>
       <PotentialDay>
         <DayOfWeek>Tuesday</DayOfWeek>
@@ -89,13 +270,66 @@
         <TimeOfEnding>17:00</TimeOfEnding>
       </PotentialDay>
     </PotentialDays>
-    <NumberOfLesson>2</NumberOfLesson>
+    <Indexes>
+      <KeyValuePairOfInt32Int32>
+        <Key>1</Key>
+        <Value>3</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>3</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>4</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>5</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>6</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>7</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>4</Key>
+        <Value>3</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>4</Key>
+        <Value>4</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>4</Key>
+        <Value>5</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>4</Key>
+        <Value>6</Value>
+      </KeyValuePairOfInt32Int32>
+    </Indexes>
+    <DaysOfLessons>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>5</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>1</Key>
+        <Value>3</Value>
+      </KeyValuePairOfInt32Int32>
+    </DaysOfLessons>
+    <NumberOfLessons>2</NumberOfLessons>
   </Student>
   <Student>
     <ID>5</ID>
     <FIO>Антонова Лиза</FIO>
     <ClassOfPiano>Специальный</ClassOfPiano>
     <LevelOfTraining>Пред.профессиональный</LevelOfTraining>
+    <Form>0</Form>
     <PotentialDays>
       <PotentialDay>
         <DayOfWeek>Friday</DayOfWeek>
@@ -113,13 +347,78 @@
         <TimeOfEnding>18:00</TimeOfEnding>
       </PotentialDay>
     </PotentialDays>
-    <NumberOfLesson>2</NumberOfLesson>
+    <Indexes>
+      <KeyValuePairOfInt32Int32>
+        <Key>0</Key>
+        <Value>3</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>0</Key>
+        <Value>4</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>0</Key>
+        <Value>5</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>0</Key>
+        <Value>6</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>3</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>4</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>5</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>6</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>7</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>4</Key>
+        <Value>3</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>4</Key>
+        <Value>4</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>4</Key>
+        <Value>5</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>4</Key>
+        <Value>6</Value>
+      </KeyValuePairOfInt32Int32>
+    </Indexes>
+    <DaysOfLessons>
+      <KeyValuePairOfInt32Int32>
+        <Key>0</Key>
+        <Value>3</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>4</Key>
+        <Value>3</Value>
+      </KeyValuePairOfInt32Int32>
+    </DaysOfLessons>
+    <NumberOfLessons>2</NumberOfLessons>
   </Student>
   <Student>
     <ID>6</ID>
     <FIO>Никитина Маша</FIO>
     <ClassOfPiano>Специальный</ClassOfPiano>
     <LevelOfTraining>Пред.профессиональный</LevelOfTraining>
+    <Form>0</Form>
     <PotentialDays>
       <PotentialDay>
         <DayOfWeek>Thursday</DayOfWeek>
@@ -132,13 +431,58 @@
         <TimeOfEnding>19:00</TimeOfEnding>
       </PotentialDay>
     </PotentialDays>
-    <NumberOfLesson>2</NumberOfLesson>
+    <Indexes>
+      <KeyValuePairOfInt32Int32>
+        <Key>1</Key>
+        <Value>5</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>1</Key>
+        <Value>6</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>1</Key>
+        <Value>7</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>1</Key>
+        <Value>8</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>5</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>6</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>7</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>8</Value>
+      </KeyValuePairOfInt32Int32>
+    </Indexes>
+    <DaysOfLessons>
+      <KeyValuePairOfInt32Int32>
+        <Key>1</Key>
+        <Value>6</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>8</Value>
+      </KeyValuePairOfInt32Int32>
+    </DaysOfLessons>
+    <NumberOfLessons>2</NumberOfLessons>
   </Student>
   <Student>
     <ID>7</ID>
     <FIO>Коденцов Семён</FIO>
     <ClassOfPiano>Специальный</ClassOfPiano>
     <LevelOfTraining>Пред.профессиональный</LevelOfTraining>
+    <Form>0</Form>
     <PotentialDays>
       <PotentialDay>
         <DayOfWeek>Friday</DayOfWeek>
@@ -161,13 +505,70 @@
         <TimeOfEnding>17:00</TimeOfEnding>
       </PotentialDay>
     </PotentialDays>
-    <NumberOfLesson>2</NumberOfLesson>
+    <Indexes>
+      <KeyValuePairOfInt32Int32>
+        <Key>0</Key>
+        <Value>3</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>0</Key>
+        <Value>4</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>0</Key>
+        <Value>5</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>0</Key>
+        <Value>6</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>1</Key>
+        <Value>3</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>1</Key>
+        <Value>4</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>1</Key>
+        <Value>5</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>1</Key>
+        <Value>6</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>4</Key>
+        <Value>4</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>4</Key>
+        <Value>5</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>4</Key>
+        <Value>6</Value>
+      </KeyValuePairOfInt32Int32>
+    </Indexes>
+    <DaysOfLessons>
+      <KeyValuePairOfInt32Int32>
+        <Key>4</Key>
+        <Value>6</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>1</Key>
+        <Value>5</Value>
+      </KeyValuePairOfInt32Int32>
+    </DaysOfLessons>
+    <NumberOfLessons>2</NumberOfLessons>
   </Student>
   <Student>
     <ID>8</ID>
     <FIO>Булатов Матвей</FIO>
     <ClassOfPiano>Специальный</ClassOfPiano>
     <LevelOfTraining>Общеразвивающий</LevelOfTraining>
+    <Form>0</Form>
     <PotentialDays>
       <PotentialDay>
         <DayOfWeek>Tuesday</DayOfWeek>
@@ -180,13 +581,58 @@
         <TimeOfEnding>17:00</TimeOfEnding>
       </PotentialDay>
     </PotentialDays>
-    <NumberOfLesson>2</NumberOfLesson>
+    <Indexes>
+      <KeyValuePairOfInt32Int32>
+        <Key>1</Key>
+        <Value>3</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>1</Key>
+        <Value>4</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>1</Key>
+        <Value>5</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>1</Key>
+        <Value>6</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>2</Key>
+        <Value>3</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>2</Key>
+        <Value>4</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>2</Key>
+        <Value>5</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>2</Key>
+        <Value>6</Value>
+      </KeyValuePairOfInt32Int32>
+    </Indexes>
+    <DaysOfLessons>
+      <KeyValuePairOfInt32Int32>
+        <Key>1</Key>
+        <Value>4</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>2</Key>
+        <Value>3</Value>
+      </KeyValuePairOfInt32Int32>
+    </DaysOfLessons>
+    <NumberOfLessons>2</NumberOfLessons>
   </Student>
   <Student>
     <ID>9</ID>
     <FIO>Семянникова Аня</FIO>
     <ClassOfPiano>Специальный</ClassOfPiano>
     <LevelOfTraining>Пред.профессиональный</LevelOfTraining>
+    <Form>0</Form>
     <PotentialDays>
       <PotentialDay>
         <DayOfWeek>Wednesday</DayOfWeek>
@@ -204,13 +650,54 @@
         <TimeOfEnding>16:00</TimeOfEnding>
       </PotentialDay>
     </PotentialDays>
-    <NumberOfLesson>2</NumberOfLesson>
+    <Indexes>
+      <KeyValuePairOfInt32Int32>
+        <Key>2</Key>
+        <Value>3</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>2</Key>
+        <Value>4</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>2</Key>
+        <Value>5</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>2</Key>
+        <Value>6</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>2</Key>
+        <Value>7</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>3</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>4</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>5</Value>
+      </KeyValuePairOfInt32Int32>
+    </Indexes>
+    <DaysOfLessons>
+      <KeyValuePairOfInt32Int32>
+        <Key>2</Key>
+        <Value>4</Value>
+      </KeyValuePairOfInt32Int32>
+    </DaysOfLessons>
+    <NumberOfLessons>2</NumberOfLessons>
   </Student>
   <Student>
     <ID>10</ID>
     <FIO>Рехвашвили Даша</FIO>
     <ClassOfPiano>Специальный</ClassOfPiano>
     <LevelOfTraining>Пред.профессиональный</LevelOfTraining>
+    <Form>0</Form>
     <PotentialDays>
       <PotentialDay>
         <DayOfWeek>Monday</DayOfWeek>
@@ -223,6 +710,181 @@
         <TimeOfEnding>17:30</TimeOfEnding>
       </PotentialDay>
     </PotentialDays>
-    <NumberOfLesson>2</NumberOfLesson>
+    <Indexes>
+      <KeyValuePairOfInt32Int32>
+        <Key>0</Key>
+        <Value>3</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>0</Key>
+        <Value>4</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>0</Key>
+        <Value>5</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>0</Key>
+        <Value>6</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>0</Key>
+        <Value>7</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>2</Key>
+        <Value>5</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>2</Key>
+        <Value>6</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>2</Key>
+        <Value>7</Value>
+      </KeyValuePairOfInt32Int32>
+    </Indexes>
+    <DaysOfLessons>
+      <KeyValuePairOfInt32Int32>
+        <Key>0</Key>
+        <Value>7</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>2</Key>
+        <Value>5</Value>
+      </KeyValuePairOfInt32Int32>
+    </DaysOfLessons>
+    <NumberOfLessons>2</NumberOfLessons>
+  </Student>
+  <Student>
+    <ID>11</ID>
+    <FIO>Петя Петров</FIO>
+    <ClassOfPiano>Специальный</ClassOfPiano>
+    <LevelOfTraining>Пред.профессиональный</LevelOfTraining>
+    <Form>6</Form>
+    <PotentialDays />
+    <Indexes />
+    <DaysOfLessons />
+    <NumberOfLessons>3</NumberOfLessons>
+  </Student>
+  <Student>
+    <ID>12</ID>
+    <FIO>Окси Мирон</FIO>
+    <ClassOfPiano>Специальный</ClassOfPiano>
+    <LevelOfTraining>Пред.профессиональный</LevelOfTraining>
+    <Form>5</Form>
+    <PotentialDays />
+    <Indexes />
+    <DaysOfLessons />
+    <NumberOfLessons>3</NumberOfLessons>
+  </Student>
+  <Student>
+    <ID>13</ID>
+    <FIO>Ваня Янав</FIO>
+    <ClassOfPiano>Специальный</ClassOfPiano>
+    <LevelOfTraining>Пред.профессиональный</LevelOfTraining>
+    <Form>7</Form>
+    <PotentialDays>
+      <PotentialDay>
+        <DayOfWeek>Thursday</DayOfWeek>
+        <TimeOfStart>10:00</TimeOfStart>
+        <TimeOfEnding>18:00</TimeOfEnding>
+      </PotentialDay>
+    </PotentialDays>
+    <Indexes>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>2</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>3</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>4</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>5</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>6</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>7</Value>
+      </KeyValuePairOfInt32Int32>
+    </Indexes>
+    <DaysOfLessons>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>2</Value>
+      </KeyValuePairOfInt32Int32>
+    </DaysOfLessons>
+    <NumberOfLessons>3</NumberOfLessons>
+  </Student>
+  <Student>
+    <ID>14</ID>
+    <FIO>ads</FIO>
+    <ClassOfPiano>Специальный</ClassOfPiano>
+    <LevelOfTraining>Общеразвивающий</LevelOfTraining>
+    <Form>2</Form>
+    <PotentialDays>
+      <PotentialDay>
+        <DayOfWeek>Wednesday</DayOfWeek>
+        <TimeOfStart>10:00</TimeOfStart>
+        <TimeOfEnding>14:00</TimeOfEnding>
+      </PotentialDay>
+    </PotentialDays>
+    <Indexes>
+      <KeyValuePairOfInt32Int32>
+        <Key>2</Key>
+        <Value>2</Value>
+      </KeyValuePairOfInt32Int32>
+    </Indexes>
+    <DaysOfLessons>
+      <KeyValuePairOfInt32Int32>
+        <Key>2</Key>
+        <Value>2</Value>
+      </KeyValuePairOfInt32Int32>
+    </DaysOfLessons>
+    <NumberOfLessons>2</NumberOfLessons>
+  </Student>
+  <Student>
+    <ID>15</ID>
+    <FIO>Слаб Ейший</FIO>
+    <ClassOfPiano>Общий</ClassOfPiano>
+    <LevelOfTraining>Общеразвивающий</LevelOfTraining>
+    <Form>1</Form>
+    <PotentialDays>
+      <PotentialDay>
+        <DayOfWeek>Thursday</DayOfWeek>
+        <TimeOfStart>15:00</TimeOfStart>
+        <TimeOfEnding>18:00</TimeOfEnding>
+      </PotentialDay>
+    </PotentialDays>
+    <Indexes>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>5</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>6</Value>
+      </KeyValuePairOfInt32Int32>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>7</Value>
+      </KeyValuePairOfInt32Int32>
+    </Indexes>
+    <DaysOfLessons>
+      <KeyValuePairOfInt32Int32>
+        <Key>3</Key>
+        <Value>7</Value>
+      </KeyValuePairOfInt32Int32>
+    </DaysOfLessons>
+    <NumberOfLessons>1</NumberOfLessons>
   </Student>
 </ArrayOfStudent>

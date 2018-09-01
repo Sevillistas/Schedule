@@ -141,7 +141,7 @@ namespace AutoSchedule
         {
             foreach (Student s in students.ListOfStudents)
             {
-                for (int i = 0; i < s.NumberOfLesson; i++)
+                for (int i = 0; i < s.NumberOfLessons; i++)
                 {
                     series.Add(s.ID);
                 }
@@ -177,14 +177,14 @@ namespace AutoSchedule
         {
             foreach(Student s in students.ListOfStudents)
             {
-                List<KeyValuePair<int, int>> indexes = new List<KeyValuePair<int, int>>();
+                List<Student.KeyValuePair<int, int>> indexes = new List<Student.KeyValuePair<int, int>>();
                 for (int i = 0; i < s.TablePotentialDays.GetLength(0); i++)
                 {
                     for (int j = 0; j < s.TablePotentialDays.GetLength(1); j++)
                     {
                         if (s.TablePotentialDays[i,j]==true)
                         {
-                            indexes.Add(new KeyValuePair<int, int>(i, j));
+                            indexes.Add(new Student.KeyValuePair<int, int>(i, j));
                         }
                     }
                 }
@@ -214,12 +214,12 @@ namespace AutoSchedule
                 {
                     continue;
                 }
-                List<KeyValuePair<int, int>> buf = new List<KeyValuePair<int, int>>();
+                List<Student.KeyValuePair<int, int>> buf = new List<Student.KeyValuePair<int, int>>();
                 buf.AddRange(s.Indexes);
                 while (success != true && buf.Count!=0)
                 {
                     int rndindex = rnd.Next(0, buf.Count);
-                    KeyValuePair<int, int> dayAndTime = buf[rndindex];
+                    Student.KeyValuePair<int, int> dayAndTime = buf[rndindex];
                     if (!CalendarOfBusyness[dayAndTime.Key, dayAndTime.Value] & s.TablePotentialDays[dayAndTime.Key, dayAndTime.Value])
                     {
                         if(s.UsedIndexes.Exists(v=>v.Key==dayAndTime.Key))
@@ -231,6 +231,7 @@ namespace AutoSchedule
                         s.UsedIndexes.Add(dayAndTime);
                         KeyValuePair<string, string> dm = new KeyValuePair<string, string>(Calendar[dayAndTime.Key, dayAndTime.Value], s.FIO);
                         StudentTimeTable[dayAndTime.Key, dayAndTime.Value] = dm;
+                        s.DaysOfLessons.Add(dayAndTime);
                         success = true;
                     }
                     else

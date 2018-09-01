@@ -62,6 +62,7 @@ namespace AutoSchedule
                     dataGridView1[j, i].Value = Convert.ToString(generator.StudentTimeTable[i,j].Value);
                 }
             }
+            SerializeXml();
         }
     }
 }

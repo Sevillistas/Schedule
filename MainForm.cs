@@ -28,9 +28,14 @@ namespace AutoSchedule
             addPotentialDay1.BringToFront();
         }
 
-        private void toolStripLabel1_Click(object sender, EventArgs e)
+        private void toolStripLabelGenerateSchedule_Click(object sender, EventArgs e)
         {
             showSchedule1.BringToFront();
+        }
+
+        private void toolStripLabelStudentInfo_Click(object sender, EventArgs e)
+        {
+            studentInfo1.BringToFront();
         }
     }
 }

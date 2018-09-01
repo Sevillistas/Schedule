@@ -31,10 +31,12 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripAddStudent = new System.Windows.Forms.ToolStripLabel();
             this.toolStripAddBusy = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripLabelGenerateSchedule = new System.Windows.Forms.ToolStripLabel();
+            this.showSchedule1 = new AutoSchedule.ShowSchedule();
             this.addStudent1 = new AutoSchedule.AddStudent();
             this.addPotentialDay1 = new AutoSchedule.AddPotentialDay();
-            this.showSchedule1 = new AutoSchedule.ShowSchedule();
+            this.toolStripLabelStudentInfo = new System.Windows.Forms.ToolStripLabel();
+            this.studentInfo1 = new AutoSchedule.StudentInfo();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,7 +45,8 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripAddStudent,
             this.toolStripAddBusy,
-            this.toolStripLabel1});
+            this.toolStripLabelGenerateSchedule,
+            this.toolStripLabelStudentInfo});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(849, 25);
@@ -64,12 +67,19 @@
             this.toolStripAddBusy.Text = "Добавление занятости студента";
             this.toolStripAddBusy.Click += new System.EventHandler(this.toolStripAddBusy_Click);
             // 
-            // toolStripLabel1
+            // toolStripLabelGenerateSchedule
             // 
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(146, 22);
-            this.toolStripLabel1.Text = "Составление расписания";
-            this.toolStripLabel1.Click += new System.EventHandler(this.toolStripLabel1_Click);
+            this.toolStripLabelGenerateSchedule.Name = "toolStripLabelGenerateSchedule";
+            this.toolStripLabelGenerateSchedule.Size = new System.Drawing.Size(146, 22);
+            this.toolStripLabelGenerateSchedule.Text = "Составление расписания";
+            this.toolStripLabelGenerateSchedule.Click += new System.EventHandler(this.toolStripLabelGenerateSchedule_Click);
+            // 
+            // showSchedule1
+            // 
+            this.showSchedule1.Location = new System.Drawing.Point(12, 28);
+            this.showSchedule1.Name = "showSchedule1";
+            this.showSchedule1.Size = new System.Drawing.Size(813, 443);
+            this.showSchedule1.TabIndex = 7;
             // 
             // addStudent1
             // 
@@ -85,18 +95,26 @@
             this.addPotentialDay1.Size = new System.Drawing.Size(813, 443);
             this.addPotentialDay1.TabIndex = 5;
             // 
-            // showSchedule1
+            // toolStripLabelStudentInfo
             // 
-            this.showSchedule1.Location = new System.Drawing.Point(12, 28);
-            this.showSchedule1.Name = "showSchedule1";
-            this.showSchedule1.Size = new System.Drawing.Size(813, 443);
-            this.showSchedule1.TabIndex = 7;
+            this.toolStripLabelStudentInfo.Name = "toolStripLabelStudentInfo";
+            this.toolStripLabelStudentInfo.Size = new System.Drawing.Size(141, 22);
+            this.toolStripLabelStudentInfo.Text = "Информация о студенте";
+            this.toolStripLabelStudentInfo.Click += new System.EventHandler(this.toolStripLabelStudentInfo_Click);
+            // 
+            // studentInfo1
+            // 
+            this.studentInfo1.Location = new System.Drawing.Point(12, 28);
+            this.studentInfo1.Name = "studentInfo1";
+            this.studentInfo1.Size = new System.Drawing.Size(813, 458);
+            this.studentInfo1.TabIndex = 8;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(849, 488);
+            this.Controls.Add(this.studentInfo1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.showSchedule1);
             this.Controls.Add(this.addStudent1);
@@ -116,8 +134,10 @@
         private System.Windows.Forms.ToolStripLabel toolStripAddBusy;
         private AddPotentialDay addPotentialDay1;
         private AddStudent addStudent1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+        private System.Windows.Forms.ToolStripLabel toolStripLabelGenerateSchedule;
         private ShowSchedule showSchedule1;
+        private System.Windows.Forms.ToolStripLabel toolStripLabelStudentInfo;
+        private StudentInfo studentInfo1;
     }
 }
 
